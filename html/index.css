@@ -1,0 +1,60 @@
+/*dic水平垂直居中*/
+.juzhong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*按钮*/
+button {
+    z-index: 1;
+    position: relative;
+    font-size: 1.2em;
+    font-family: inherit;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #e0324e;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #161616;
+}
+
+button:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+
+/*文字颜色渐变*/
+.text-clip{
+    font: normal 125% Helvetica, Arial, sans-serif;    /*字体大小设置*/
+    color:transparent;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgba(0,173,181,1) 0%, rgba(0,173,181,.4)  100%);
+    -webkit-background-clip: text;
+}
+
+.p{
+    background-color: white;
+}
