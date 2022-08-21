@@ -48,7 +48,7 @@ button:hover::before {
 
 /*文字颜色渐变*/
 .text-clip{
-    font: normal 125% Helvetica, Arial, sans-serif;    /*字体大小设置*/
+    font: normal 120% Helvetica, Arial, sans-serif;    /*字体大小设置*/
     color:transparent;
     font-weight: bold;
     background: linear-gradient(45deg, rgba(0,173,181,1) 0%, rgba(0,173,181,.4)  100%);

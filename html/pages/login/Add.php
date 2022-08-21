@@ -38,8 +38,9 @@ while ($row['IP']==$ID) { // 判断查询结果是否与随机ID相同
     $row = mysqli_fetch_array($result); // 获取查询结果
 }
 
-
 echo "查询结果与随机ID不相同"; // 查询结果与随机ID不相同
 $db->add($connID,'users',['IP'=>$ID,'zhanghao'=>$zhanghao,'password'=>$password,'username'=>$username,'userphone'=>$userphone,'usermail'=>$usermail]); // 选择数据库
 $db->close($connID); // 关闭数据库连接
 echo "添加成功"; // 输出成功
+//header("refresh:3;url=http://www.wangqianlong.com/pages/3d/xinxin.html");
+//print "3秒后跳转到首页";   // 输出成功

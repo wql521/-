@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>三千尘世客</title>
     <link rel="stylesheet" href="../../css/login.css">
-
     <link rel="shortcut icon" href="../../img/logo.ico">
 </head>
 <body>
